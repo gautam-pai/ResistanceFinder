@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styling.css" />
+    <title>Resistance Value Finder</title>
+  </head>
+  <body class="resistancepage">
+    <div class="header">
+      <a href="ResistanceValue.html" style="text-decoration: none">
+        <img
+          src="logo.svg"
+          style="width: 40px; height: 40px"
+          alt="ResistorLogo"
+        />Resistor Value Finder
+      </a>
+    </div>
+
+    <h2>Let's find the value of the Resistor that you have!</h2>
+    <form onsubmit="return ResistanceCalculate();">
+      <h4>Select First band value</h4>
+      <label for="band1">Choose Band1:</label>
+      <select name="band1" id="band1">
+        <option value="0" style="background-color: black; color: white">
+          <b>Black</b>
+        </option>
+        <option value="1" style="background-color: brown; color: white">
+          <b>Brown</b>
+        </option>
+        <option value="2" style="background-color: red; color: white">
+          <b>Red</b>
+        </option>
+        <option value="3" style="background-color: orangered; color: white">
+          <b>Orange</b>
+        </option>
+        <option value="4" style="background-color: yellow; color: white">
+          <b>Yellow</b>
+        </option>
+        <option value="5" style="background-color: green; color: white">
+          <b>Green</b>
+        </option>
+        <option value="6" style="background-color: blue; color: white">
+          <b>Blue</b>
+        </option>
+        <option value="7" style="background-color: violet; color: white">
+          <b>Violet</b>
+        </option>
+        <option value="8" style="background-color: grey; color: white">
+          <b>Grey</b>
+        </option>
+        <option value="9" style="background-color: white; color: black">
+          <b>White</b>
+        </option>
+      </select>
+      <h4>Select Second band value</h4>
+      <label for="band2">Choose Band2:</label>
+      <select name="band2" id="band2">
+        <option value="0" style="background-color: black; color: white">
+          <b>Black</b>
+        </option>
+        <option value="1" style="background-color: brown; color: white">
+          <b>Brown</b>
+        </option>
+        <option value="2" style="background-color: red; color: white">
+          <b>Red</b>
+        </option>
+        <option value="3" style="background-color: orangered; color: white">
+          <b>Orange</b>
+        </option>
+        <option value="4" style="background-color: yellow; color: white">
+          <b>Yellow</b>
+        </option>
+        <option value="5" style="background-color: green; color: white">
+          <b>Green</b>
+        </option>
+        <option value="6" style="background-color: blue; color: white">
+          <b>Blue</b>
+        </option>
+        <option value="7" style="background-color: violet; color: white">
+          <b>Violet</b>
+        </option>
+        <option value="8" style="background-color: grey; color: white">
+          <b>Grey</b>
+        </option>
+        <option value="9" style="background-color: white; color: black">
+          <b>White</b>
+        </option>
+      </select>
+      <h4>Select Third band value</h4>
+      <div class="extras">Select only if there are total of 5 or 6 bands</div>
+      <label for="band3">Choose Band3:</label>
+      <select name="band3" id="band3">
+        <option value="0" style="background-color: black; color: white">
+          <b>Black</b>
+        </option>
+        <option value="1" style="background-color: brown; color: white">
+          <b>Brown</b>
+        </option>
+        <option value="2" style="background-color: red; color: white">
+          <b>Red</b>
+        </option>
+        <option value="3" style="background-color: orangered; color: white">
+          <b>Orange</b>
+        </option>
+        <option value="4" style="background-color: yellow; color: white">
+          <b>Yellow</b>
+        </option>
+        <option value="5" style="background-color: green; color: white">
+          <b>Green</b>
+        </option>
+        <option value="6" style="background-color: blue; color: white">
+          <b>Blue</b>
+        </option>
+        <option value="7" style="background-color: violet; color: white">
+          <b>Violet</b>
+        </option>
+        <option value="8" style="background-color: grey; color: white">
+          <b>Grey</b>
+        </option>
+        <option value="9" style="background-color: white; color: black">
+          <b>White</b>
+        </option>
+      </select>
+      <h4>Select Multiplier Value</h4>
+      <div class="extras">
+        This is the 4th band in Resistor of 5 Bands or 3rd band in Resistor of 4
+        Bands
+      </div>
+      <label for="multiplier">Choose Multiplier:</label>
+      <select name="multiplier" id="multiplier">
+        <option value="1" style="background-color: black; color: white">
+          <b>Black</b>
+        </option>
+        <option value="10" style="background-color: brown; color: white">
+          <b>Brown</b>
+        </option>
+        <option value="100" style="background-color: red; color: white">
+          <b>Red</b>
+        </option>
+        <option value="1000" style="background-color: orangered; color: white">
+          <b>Orange</b>
+        </option>
+        <option value="10000" style="background-color: yellow; color: white">
+          <b>Yellow</b>
+        </option>
+        <option value="100000" style="background-color: green; color: white">
+          <b>Green</b>
+        </option>
+        <option value="1000000" style="background-color: blue; color: white">
+          <b>Blue</b>
+        </option>
+        <option value="10000000" style="background-color: violet; color: white">
+          <b>Violet</b>
+        </option>
+        <option value="100000000" style="background-color: grey; color: white">
+          <b>Grey</b>
+        </option>
+        <option
+          value="1000000000"
+          style="background-color: white; color: black"
+        >
+          <b>White</b>
+        </option>
+        <option value="0.1" style="background-color: goldenrod; color: white">
+          <b>Gold</b>
+        </option>
+        <option value="0.01" style="background-color: silver; color: black">
+          <b>Silver</b>
+        </option>
+      </select>
+      <h4>Select Tolerance Band</h4>
+      <div class="extras">
+        This is the 4th band in Resistor of 4 Bands or 5th band in Resistor of 5
+        Bands
+      </div>
+      <label for="tolerance">Choose Tolerance Band:</label>
+      <select name="tolerance" id="tolerance">
+        <option value="1" style="background-color: brown; color: white">
+          <b>Brown</b>
+        </option>
+        <option value="2" style="background-color: red; color: white">
+          <b>Red</b>
+        </option>
+        <option value="0.5" style="background-color: green; color: white">
+          <b>Green</b>
+        </option>
+        <option value="0.25" style="background-color: blue; color: white">
+          <b>Blue</b>
+        </option>
+        <option value="0.1" style="background-color: violet; color: white">
+          <b>Violet</b>
+        </option>
+        <option value="0.05" style="background-color: grey; color: white">
+          <b>Grey</b>
+        </option>
+        <option value="5" style="background-color: goldenrod; color: white">
+          <b>Gold</b>
+        </option>
+        <option value="10" style="background-color: silver; color: black">
+          <b>Silver</b>
+        </option>
+        <option value="20" style="background-color: white; color: black">
+          <b>No Color</b>
+        </option>
+      </select>
+      <br />
+      <hr />
+      <div class="alignit"><input type="submit" value="Submit" /></div>
+      <div class="alignit"><input type="reset" value="Reset" /></div>
+      <hr />
+      <div id="result"></div>
+    </form>
+    <script type="text/javascript" src="ResistanceValue.js"></script>
+  </body>
+</html>

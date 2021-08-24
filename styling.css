@@ -1,0 +1,29 @@
+.indexpage,
+.resistancepage {
+  text-align: center;
+  background-color: bisque;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.alignit {
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 47%;
+  height: 50px;
+  width: 100px;
+}
+#result {
+  padding: 10px;
+  font-weight: bolder;
+  color: black;
+  border: royalblue;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.header {
+  background-color: sandybrown;
+  color: black;
+  font-size: 50px;
+  text-align: center;
+}
